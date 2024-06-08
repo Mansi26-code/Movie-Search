@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="navbar">
+            <div class="logo">
+                <h1>MoviesHUB</h1>
+            </div>
+            <div class="search-container">
+                <form onsubmit="handleSubmit(event)" class="search-form">
+                    <input type="search" class="search-input" placeholder="Search movies..." id="searchInput" oninput="handleInput()">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="movie-modal-box">
+            <!-- Movie items will be appended here -->
+        </div>
+        <div class="movie_content">
+            <!-- Movie content will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
